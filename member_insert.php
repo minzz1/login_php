@@ -10,8 +10,8 @@
   // mysqli_connect()함수로 데이터 베이스  접속하기
   // mysqli_connect("호스트명", "사용자계정", "비밀번호", "데이터베이스명");
 
-
-  $con = mysqli_connect("localhost", "project1_user", "12345", "project1");
+  include "database_con.php";
+  //$con = mysqli_connect("localhost", "project1_user", "12345", "project1");
 
   //sql 명령어 작성
   $sql = "insert into members(id, pass, level)";
