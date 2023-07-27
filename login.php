@@ -9,7 +9,8 @@
   // mysqli_connect("호스트명", "사용자계정", "비밀번호", "데이터베이스명");
 
   //데이터베이스 접속정보 작성
-  $con = mysqli_connect("localhost", "project1_user", "12345", "project1");
+  include "database_con.php";
+  //$con = mysqli_connect("localhost", "project1_user", "12345", "project1");
 
   //sql 명령어 작성
   //입력받은 id와 데이터베이스의 id 컬럼의 값이 일치하는 데이터가 있는지 검색
