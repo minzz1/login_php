@@ -14,7 +14,7 @@
     <ul id="top_menu">
       <li><a href="./member_from.php">회원가입</a></li>
       <li> | </li>
-      <li><a href="login_form.php">로그인</a></li>
+      <li><a href="./login_form.php">로그인</a></li>
     </ul>
   </div>
   <div id="menu_ber">
