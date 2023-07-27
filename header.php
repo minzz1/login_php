@@ -12,9 +12,33 @@
       <a href="index.php">sns연동 회원가입프로젝트</a>
     </h3>
     <ul id="top_menu">
+    <?php
+    //로그인 상태가 아니라면 회원가입, 로그인 메뉴 출력
+      if (!$user_id){
+    ?>
       <li><a href="./member_from.php">회원가입</a></li>
       <li> | </li>
       <li><a href="./login_form.php">로그인</a></li>
+    <?php 
+    //로그인 상태라면 아이디, 레벨, 로그아웃 메뉴 출력
+      } else {
+        $logged = $user_id."[ Level:".$user_level." ]";
+    ?>
+      <li><?= $logged ?></li>
+      <li> | </li>
+      <li><a href="logout.php">로그아웃</a></li>
+    <?php
+      }
+    ?>
+    <?php
+      if($user_level==1){
+    ?>
+      <li> | </li>
+      <li><a href="admin.php">minzz 관리자 모드</a></li>
+    <?php
+      }
+    ?>
+
     </ul>
   </div>
   <div id="menu_ber">
